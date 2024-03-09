@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.main-content > * {
+}
+
+/* header and navigation */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f2937;
+    /* padding: 0 16px; */
+}
+
+.logo {
+    font-family: "Cedarville Cursive", cursive;
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 18px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+/* hero content */
+
+.awesome-section {
+    flex: 1 1 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    gap: 25px;
+    padding: 22px;
+    
+}
+
+.awesome-article {
+    width: 450px;
+}
+
+
+.awesome-title {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.awesome-content { 
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-bottom: 12px;
+}
+
+.awesome-button {
+    background-color: #3882f6;
+    border-radius: 5px;
+    border: none;
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px 24px;
+}
+
+/* information section */
+
+.information-section {
+    /* outline: 2px solid orange; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 42px;
+    gap: 32px;
+}
+
+.information-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    /* padding-top: 25px; */
+}
+
+.information-article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 42px;
+    /* padding: 32px; */
+}
+
+.information-content {
+    /* outline: 2px solid orange; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 250px;
+    gap: 16px;
+}
+
+.information-content > img {
+    border-radius: 10px;
+}
+
+/* quote section */
+
+.quote-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    height: 400px;
+    padding: 22px;
+    overflow: hidden;
+}
+
+.quote-article {
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 200;
+    width: 850px;
+}
+
+.quote-author {
+    display: block;
+    text-align: end;
+    font-weight: 600;
+    font-size: 26px;
+    padding-right: 46px;
+}
+
+/* signup section */
+
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 22px;
+}
+
+.signup-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882f6;
+    height: 150px;
+    width: 850px;
+    border-radius: 10px;
+    color: #f9faf8;
+    gap: 62px;
+    overflow: hidden;
+    padding: 22px;
+
+}
+
+.signup-title {
+    font-size: 22px;
+}
+
+.signup-button {
+    flex-shrink: 0;
+    background-color: #3882f6;
+    border-radius: 5px;
+    border-color: #f9faf8;
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px 24px;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #f9faf8;
+    font-size: 18px;
+    height: 72px;
+}
